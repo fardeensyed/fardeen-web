@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expertise &amp; Certification | SJ FARD.SYS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#474647",
+                    "outline-variant": "#3c4a42",
+                    "surface-container-highest": "#323537",
+                    "tertiary-fixed-dim": "#c8c6c7",
+                    "surface-tint": "#4edea3",
+                    "inverse-primary": "#006c49",
+                    "on-primary": "#003824",
+                    "surface-container-low": "#191c1e",
+                    "tertiary-fixed": "#e5e2e3",
+                    "background": "#101415",
+                    "on-error": "#690005",
+                    "on-primary-fixed": "#002113",
+                    "on-surface": "#e0e3e5",
+                    "surface-bright": "#363a3b",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "inverse-surface": "#e0e3e5",
+                    "primary-container": "#10b981",
+                    "surface-container-high": "#272a2c",
+                    "tertiary": "#c8c6c7",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed": "#1c1b1c",
+                    "tertiary-container": "#a4a2a3",
+                    "surface-variant": "#323537",
+                    "surface": "#101415",
+                    "on-secondary-container": "#a9bad3",
+                    "on-background": "#e0e3e5",
+                    "on-primary-container": "#00422b",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#4edea3",
+                    "surface-dim": "#101415",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#0b0f10",
+                    "surface-container": "#1d2022",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-secondary-fixed": "#0b1c30",
+                    "inverse-on-surface": "#2d3133",
+                    "on-secondary": "#213145",
+                    "primary-fixed-dim": "#4edea3",
+                    "secondary-container": "#3a4a5f",
+                    "primary-fixed": "#6ffbbe",
+                    "secondary-fixed": "#d3e4fe",
+                    "outline": "#86948a",
+                    "on-surface-variant": "#bbcabf",
+                    "secondary": "#b7c8e1",
+                    "on-tertiary": "#313031",
+                    "on-tertiary-container": "#39393a",
+                    "secondary-fixed-dim": "#b7c8e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "base": "8px",
+                    "stack-sm": "12px",
+                    "gutter": "24px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "container-max": "1440px",
+                    "stack-md": "32px"
+            },
+            "fontFamily": {
+                    "label-mono": ["JetBrains Mono"],
+                    "body-base": ["Geist"],
+                    "headline-md": ["Geist"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Geist"],
+                    "headline-lg": ["Geist"]
+            },
+            "fontSize": {
+                    "label-mono": ["12px", {"lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-base": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "label-caps": ["10px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #0A0A0B;
+    color: #e0e3e5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased
+    }
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(16, 185, 129, 0.1)
+    }
+.neural-node {
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1)
+    }
+.neural-node:hover {
+    background: rgba(16, 185, 129, 0.08);
+    transform: translatey(-2px) scale(1.02);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1)
+    }
+.ambient-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0
+    }
+.micro-noise {
+    position: fixed;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB6DU4WC9Q77B2c4rmY23jTIeirDwCNJ0JNcwlfJK_Zvds_12xRo1kyyMNrB51bv_nwrdzcywXZG8xuXO0hqztRNofcDlEHqBw7x3ZuRxJS4_W4NHgaN2I7Z_WWg3ITWv-rCI8X1o_JNAcuXfndpmwHxS1yHHAnVCtl1hNP6jspjdoKJrVscR_fzZ0waBNzt5_GB0ePvTfG4XMUDZmgEw5UcFGYV6qf_kDkO0EsUblWtRNxmyj91AXNOGmEYey4ZAS3PywBtPkOgw);
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 99
+    }
+.pulse-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #10B981;
+    border-radius: 50%;
+    animation: pulse 2s infinite
+    }
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+        } 50% {
+        transform: scale(1.1);
+        opacity: 0.4;
+        } 100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+        }
+    }
+.scroll-hide::-webkit-scrollbar {
+    display: none
+    }</style>
+</head>
+<body class="font-body-base selection:bg-primary/30 overflow-x-hidden">
+<div class="micro-noise"></div>
+<div class="ambient-glow top-[-200px] left-[-100px]"></div>
+<div class="ambient-glow bottom-[-200px] right-[-100px]"></div>
+<!-- Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-base max-w-container-max mx-auto bg-surface/5 backdrop-blur-xl shadow-[0_0_40px_rgba(16,185,129,0.05)]">
+<div class="font-headline-md text-headline-md font-light tracking-widest text-on-surface">SJ FARD.SYS</div>
+<div class="hidden md:flex items-center gap-gutter font-label-mono text-label-mono">
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors duration-300" href="index.html">Research</a>
+<a class="text-primary border-b border-primary/40 pb-1 transition-all duration-300" href="projects.html">Forge</a>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors duration-300" href="experience.html">Logs</a>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors duration-300" href="mastery.html">Nexus</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-mono text-label-mono hover:scale-95 transition-transform duration-200">
+            Connect
+        </button>
+</nav>
+<main class="relative z-10 pt-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto min-h-screen">
+<!-- Header Section -->
+<header class="py-stack-md flex flex-col gap-base">
+<div class="flex items-center gap-base">
+<div class="pulse-dot"></div>
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-[0.2em]">Neural Competency Map</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-headline-lg max-w-2xl leading-tight">Expertise Synthesis &amp; Protocol Verification</h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-xl opacity-80">Mapping the convergence of high-performance AI frameworks, core computational science, and architectural patterns.</p>
+</header>
+<!-- Neural Map (Bento Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-stack-md">
+<!-- AI Frameworks Node -->
+<div class="md:col-span-7 glass-panel rounded-xl p-stack-md relative overflow-hidden group">
+
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<span class="font-label-caps text-label-caps text-primary border border-primary/20 px-2 py-1 rounded">DOMAIN: INTELLIGENCE</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">neurology</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-base">AI Frameworks</h3>
+<p class="text-on-surface-variant text-sm mb-gutter">Deep neural architectures and generative synthesis protocols.</p>
+</div>
+<div class="flex flex-wrap gap-base">
+<div class="neural-node glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+<span class="font-label-mono text-[10px] text-primary">01</span>
+<span class="font-label-mono text-label-mono">PyTorch</span>
+</div>
+<div class="neural-node glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+<span class="font-label-mono text-[10px] text-primary">02</span>
+<span class="font-label-mono text-label-mono">TensorFlow</span>
+</div>
+<div class="neural-node glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+<span class="font-label-mono text-[10px] text-primary">03</span>
+<span class="font-label-mono text-label-mono">HuggingFace</span>
+</div>
+<div class="neural-node glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+<span class="font-label-mono text-[10px] text-primary">04</span>
+<span class="font-label-mono text-label-mono">LangChain</span>
+</div>
+<div class="neural-node glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+<span class="font-label-mono text-[10px] text-primary">05</span>
+<span class="font-label-mono text-label-mono">OpenAI SDK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Web & Databases Node -->
+<div class="md:col-span-5 glass-panel rounded-xl p-stack-md flex flex-col justify-between group">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<span class="font-label-caps text-label-caps text-secondary border border-secondary/20 px-2 py-1 rounded">DOMAIN: INFRASTRUCTURE</span>
+<span class="material-symbols-outlined text-secondary">database</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-base">System Architecture</h3>
+<p class="text-on-surface-variant text-sm mb-gutter">Distributed storage and high-concurrency web protocols.</p>
+</div>
+<div class="space-y-base">
+<div class="flex items-center justify-between p-3 glass-panel rounded-lg hover:bg-white/5 transition-all">
+<span class="font-label-mono text-label-mono">PostgreSQL / VectorDB</span>
+<div class="h-1 w-12 bg-secondary/30 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[85%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 glass-panel rounded-lg hover:bg-white/5 transition-all">
+<span class="font-label-mono text-label-mono">Next.js / TypeScript</span>
+<div class="h-1 w-12 bg-secondary/30 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[92%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 glass-panel rounded-lg hover:bg-white/5 transition-all">
+<span class="font-label-mono text-label-mono">Redis Cache Layer</span>
+<div class="h-1 w-12 bg-secondary/30 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[78%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Core CS Node -->
+<div class="md:col-span-4 glass-panel rounded-xl p-stack-md flex flex-col gap-gutter group">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant/50">LEVEL 0</span>
+<h4 class="font-headline-md text-headline-md">Core Science</h4>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-sm">terminal</span>
+</div>
+</div>
+<ul class="space-y-stack-sm font-label-mono text-label-mono text-on-surface-variant">
+<li class="flex items-center gap-2 group-hover:text-primary transition-colors">
+<span class="text-primary opacity-50">â†’</span> Algorithm Design
+                    </li>
+<li class="flex items-center gap-2 group-hover:text-primary transition-colors">
+<span class="text-primary opacity-50">â†’</span> OS Fundamentals
+                    </li>
+<li class="flex items-center gap-2 group-hover:text-primary transition-colors">
+<span class="text-primary opacity-50">â†’</span> Discrete Math
+                    </li>
+<li class="flex items-center gap-2 group-hover:text-primary transition-colors">
+<span class="text-primary opacity-50">â†’</span> Logic Synthesis
+                    </li>
+</ul>
+</div>
+<!-- Certification Section -->
+<div class="md:col-span-8 glass-panel rounded-xl p-stack-md relative overflow-hidden">
+<div class="flex justify-between items-center mb-gutter">
+<h4 class="font-headline-md text-headline-md">Protocol Certifications</h4>
+<span class="font-label-mono text-label-mono text-on-surface-variant/40">VERIFIED BY SHA-256</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Cert 1 -->
+<div class="flex items-start gap-gutter p-gutter rounded-lg bg-white/5 border border-white/5 hover:border-primary/20 transition-all cursor-default">
+<div class="p-3 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<p class="font-label-mono text-label-mono text-primary mb-1">TCS iON</p>
+<h5 class="font-headline-md text-[18px] mb-2 leading-tight">Advanced Cognitive Systems</h5>
+<p class="text-xs text-on-surface-variant/70">Validation of neural network optimization and enterprise cognitive deployment.</p>
+</div>
+</div>
+<!-- Cert 2 -->
+<div class="flex items-start gap-gutter p-gutter rounded-lg bg-white/5 border border-white/5 hover:border-primary/20 transition-all cursor-default">
+<div class="p-3 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">code</span>
+</div>
+<div>
+<p class="font-label-mono text-label-mono text-primary mb-1">Python Elite</p>
+<h5 class="font-headline-md text-[18px] mb-2 leading-tight">High-Performance Protocol</h5>
+<p class="text-xs text-on-surface-variant/70">Mastery of asynchronous programming and complex mathematical modeling.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hackathon Spotlight -->
+<section class="py-stack-lg">
+<div class="glass-panel rounded-2xl p-stack-md flex flex-col md:flex-row items-center gap-stack-lg border-l-4 border-l-primary">
+<div class="relative">
+<div class="w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/5 flex items-center justify-center border border-primary/20 relative group">
+<div class="absolute inset-0 bg-primary/10 blur-3xl opacity-0 group-hover:opacity-40 transition-opacity"></div>
+<span class="material-symbols-outlined text-primary text-6xl md:text-8xl" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex items-center gap-2 justify-center md:justify-start mb-base">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full font-label-mono text-[10px] tracking-widest">STATE-LEVEL ACHIEVEMENT</span>
+<div class="pulse-dot"></div>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-base leading-tight">Hackathon Laureate</h2>
+<p class="font-body-base text-body-base text-on-surface-variant/80 max-w-2xl mb-gutter">
+                        Engineered a real-time predictive diagnostic system during the State-Level Hackathon, securing the 1st position. The solution utilized a custom-trained lightweight transformer model for edge deployment.
+                    </p>
+<div class="flex flex-wrap gap-gutter justify-center md:justify-start font-label-mono text-label-mono">
+<div class="flex flex-col">
+<span class="text-primary">PRECISION</span>
+<span class="text-on-surface">98.4%</span>
+</div>
+<div class="w-px h-8 bg-white/10"></div>
+<div class="flex flex-col">
+<span class="text-primary">LATENCY</span>
+<span class="text-on-surface">12ms</span>
+</div>
+<div class="w-px h-8 bg-white/10"></div>
+<div class="flex flex-col">
+<span class="text-primary">NODES</span>
+<span class="text-on-surface">42 Distributed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-stack-md flex flex-col items-center justify-center gap-base border-t border-white/5 bg-transparent relative z-10">
+<div class="font-label-caps text-label-caps text-outline tracking-[0.3em]">Â© 2024 SJ FARD.SYS // [40.7128Â° N, 74.0060Â° W]</div>
+<div class="flex gap-gutter font-label-mono text-label-mono">
+<a class="text-on-surface-variant/50 hover:text-primary hover:tracking-widest transition-all duration-500" href="https://github.com/fardeensyed" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="text-on-surface-variant/50 hover:text-primary hover:tracking-widest transition-all duration-500" href="https://www.linkedin.com/in/syed-jalaluddin-fardeen-731b952b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-on-surface-variant/50 hover:text-primary hover:tracking-widest transition-all duration-500" href="https://x.com/fardeen_it62539" target="_blank" rel="noopener noreferrer">X-Protocol</a>
+<a class="text-on-surface-variant/50 hover:text-primary hover:tracking-widest transition-all duration-500" href="mailto:syedfardeen408@gmail.com">Email</a>
+</div>
+</footer>
+<script>
+        // Magnetic Hover Effect
+        document.querySelectorAll('.neural-node, .glass-panel').forEach(el => {
+            el.addEventListener('mousemove', e => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const deltaX = (x - centerX) / 20;
+                const deltaY = (y - centerY) / 20;
+                
+                el.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // Ambient Mouse Glow
+        document.addEventListener('mousemove', e => {
+            const glows = document.querySelectorAll('.ambient-glow');
+            glows.forEach((glow, idx) => {
+                const factor = (idx + 1) * 0.02;
+                const x = e.clientX * factor;
+                const y = e.clientY * factor;
+                glow.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        });
+    </script>
+</body></html>

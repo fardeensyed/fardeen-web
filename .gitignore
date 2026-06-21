@@ -1,0 +1,6 @@
+# Original Google Stitch export and previews
+stitch_creative_visual_portfolio/
+
+# Local tooling
+.DS_Store
+Thumbs.db
